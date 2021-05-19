@@ -677,6 +677,16 @@ hr {
     font-weight: 700;
     color: rgba(37, 32, 95, 0.801);
 
+    &:hover {
+        font-size: 1.1rem;
+        color: rgba(152, 30, 189, 0.781);
+        transition: 0.4s;
+    }
+
+    &:after {
+        transition: 0.8s;
+    }
+
     @media (min-height: 768px) and (max-height: 844px) {
     font-size: 0.8rem;
     }
