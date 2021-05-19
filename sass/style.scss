@@ -669,6 +669,19 @@ hr {
     background-image: url(/img/react.png);
 }
 
-.img9 {
-    background-image: url(/img/Chisto4\ Dev\ Resume.png);
+.portfolioLink {
+    margin-top: 1rem;
+    a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+
+    @media (min-height: 768px) and (max-height: 844px) {
+    font-size: 0.8rem;
+    }
+    @media (max-width: 739px), (max-height: 739px) {
+    font-size: 1.5rem;
+    }
+    }
 }
