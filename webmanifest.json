@@ -4,11 +4,10 @@
     "description": "This is resume about Junior Chhistofor Nikolas Web Developer from Rusiia, town Taganrog",
     "icons": [
         {
-            "src": "/icon/icon512.png",
+            "src": "\/icon/favicon.ico",
             "sizes": "512x512",
             "type": "image/png"
         },
-    
         {
             "url": "/icon/icon256.png",
             "size": "256x256",
