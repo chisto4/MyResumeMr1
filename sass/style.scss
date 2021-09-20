@@ -288,6 +288,13 @@ img {
     flex-direction: column;
 }
 
+.educationTop{
+    margin-top:30px;
+    @media (max-width: 739px), (max-height: 739px) {
+    margin-top:0;
+    }
+}
+
 hr {
     width: 20rem;
     height: 0.3rem;
@@ -679,8 +686,8 @@ hr {
 }
 
 .skillsImg {
-    min-height: 2rem;
-    min-width: 2rem;
+    min-height: 30px;
+    min-width: 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -728,6 +735,30 @@ hr {
 
 .img8 {
     background-image: url(/img/react.png);
+}
+
+.img9 {
+    background-image: url(/img/typeScript.png);
+    width: 30px;
+    height: 30px;
+}
+
+.img10 {
+    background-image: url(/img/node.png);
+    width: 30px;
+    height: 30px;
+}
+
+.img11 {
+    background-image: url(/img/postgresql.png);
+    width: 30px;
+    height: 30px;
+}
+
+.img12 {
+    background-image: url(/img/mongo.png);
+    width: 30px;
+    height: 30px;
 }
 
 .portfolioLink {
