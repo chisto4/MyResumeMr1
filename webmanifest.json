@@ -1,7 +1,7 @@
 {
     "name": "Chisto4DEV Info",
     "short_name": "Ch4Dev Info",
-    "description": "This is resume about Junior Chhistofor Nikolas Web Developer from Rusiia, town Taganrog",
+    "description": "This is resume about Junior Chistofor Nikolas Web Developer from Russia, town Taganrog",
     "icons": [
         {
             "src": "\/icon/favicon.ico",
@@ -52,7 +52,7 @@
     ],
 
     "start_url": "index.html",
-    "display": "fullscreen",
+    "display": "fullScreen",
     "theme_color": "#B12A34",
     "background_color": "#B12A34"
 }

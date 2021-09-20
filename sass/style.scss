@@ -24,7 +24,6 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;}
     justify-content: center;
     width: 100%;
     height: 100%;
-
     box-sizing: border-box;
 }
 
@@ -259,13 +258,18 @@ h4 {
     @extend %flexCenter;
     flex-direction: column;
     width: 60%;
+    justify-content: flex-start;
 
     @media (max-width: 739px), (max-height: 739px) {
         width: 100%;
         height: auto;
         padding-top: 1rem;
-
+        justify-content: flex-start;
     }
+}
+
+.justefuStyle{
+    justify-content: flex-start;  
 }
 
 img {
@@ -509,39 +513,39 @@ hr {
 
     background-color:rgba(255, 255, 255, 0);
     border:2px solid #222;    
-    height:70px;
-    width:70px;
+    height:80px;
+    width:80px;
     border-radius:50%;
 
     @media (min-height: 845px) and (max-height: 955px) {
-        height:60px;
-        width:60px;    
+        height:70px;
+        width:70px;    
     }
     @media (min-height: 768px) and (max-height: 844px) {
-        height:50px;
-        width:50px;
+        height:60px;
+        width:60px;
     }
     @media (min-height: 740px) and (max-height: 767px) {
-        height:40px;
-        width:40px;
+        height:50px;
+        width:50px;
     }
 }
 
 %vhCircleAfter {
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
 
     @media (min-height: 845px) and (max-height: 955px) {
+            width: 55px;
+            height: 55px;
+        }
+    @media (min-height: 768px) and (max-height: 844px) {
             width: 45px;
             height: 45px;
         }
-    @media (min-height: 768px) and (max-height: 844px) {
-            width: 35px;
-            height: 35px;
-        }
     @media (min-height: 740px) and (max-height: 767px) {
-            width: 26px;
-            height: 26px;
+            width: 36px;
+            height: 36px;
     }
 }
 
@@ -560,6 +564,22 @@ hr {
     }
 }
 
+.circleCSS{
+    .skillsCircleWrapper:after {
+        content:'';
+        position: absolute;
+        display: inline-block;
+        @extend %vhCircleAfter;
+        border: 7px solid rgba(56, 87, 116, 0.541);
+        border-bottom:7px solid transparent;
+        border-radius: 50%;
+    
+    @media (min-height: 740px) and (max-height: 767px) {
+        border: 5px solid rgba(56, 87, 116, 0.541);
+        border-bottom:5px solid transparent;
+        }
+    }}
+
 .gitCircleStak {
     .skillsCircleWrapper:after {
         content:'';
@@ -567,7 +587,7 @@ hr {
         display: inline-block;
         @extend %vhCircleAfter;
         border: 7px solid rgba(56, 87, 116, 0.541);
-        border-right: 7px solid transparent;
+        // border-right: 7px solid transparent;
         border-bottom: 7px solid transparent;
         border-radius: 50%;
     
@@ -586,8 +606,7 @@ hr {
         display: inline-block;
         @extend %vhCircleAfter;
         border: 7px solid rgba(56, 87, 116, 0.541);
-        border-right: 7px solid transparent;
-        border-top: 7px solid transparent;
+        border-left: 7px solid transparent;
         border-radius: 50%;
 
         @media (min-height: 740px) and (max-height: 767px) {
@@ -598,6 +617,24 @@ hr {
     }
 }
 
+.circleTypeScript{
+    .skillsCircleWrapper:after {
+        content:'';
+        position: absolute;
+        display: inline-block;
+        @extend %vhCircleAfter;
+        border: 7px solid rgba(56, 87, 116, 0.541);
+        border-top: 7px solid transparent;
+        border-radius: 50%;
+
+        @media (min-height: 740px) and (max-height: 767px) {
+            border: 5px solid rgba(56, 87, 116, 0.541);
+            border-right:5px solid transparent;
+            border-top: 5px solid transparent;
+            }
+    } 
+}
+
 .reactCircleStak {
     .skillsCircleWrapper:after {
         content:'';
@@ -605,8 +642,8 @@ hr {
         display: inline-block;
         @extend %vhCircleAfter;
         border: 7px solid rgba(56, 87, 116, 0.541);
-        border-right: 7px solid transparent;
-        border-left: 7px solid transparent;
+        // border-right: 7px solid transparent;
+        // border-left: 7px solid transparent;
         border-bottom: 7px solid transparent;
         border-radius: 50%;
 
@@ -617,6 +654,28 @@ hr {
             border-bottom: 5px solid transparent;
             }
     }
+}
+
+.circleMongoDB{
+    .skillsCircleWrapper:after {
+        content:'';
+        position: absolute;
+        display: inline-block;
+        @extend %vhCircleAfter;
+        border: 7px solid rgba(56, 87, 116, 0.541);
+        border-right: 7px solid transparent;
+        // border-left: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-radius: 50%;
+
+        @media (min-height: 740px) and (max-height: 767px) {
+            border: 5px solid rgba(56, 87, 116, 0.541);
+            border-right:5px solid transparent;
+            border-left: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            }
+    }
+ 
 }
 
 .skillsImg {
