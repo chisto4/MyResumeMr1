@@ -201,6 +201,7 @@ h4 {
 
 .mobileContact {
     display: none;
+    width: auto;
 
     @media (max-width: 739px), (max-height: 739px) {
         display: flex;
@@ -250,6 +251,9 @@ h4 {
         @media (min-height: 740px) and (max-height: 767px) {
             font-size: 0.55rem;
         }
+        @media (max-width: 740px){
+            width: auto;
+        }
     }
 
 //RIGHT SECTION
@@ -286,13 +290,6 @@ img {
     @extend %flexCenter;
     height: auto;
     flex-direction: column;
-}
-
-.educationTop{
-    margin-top:30px;
-    @media (max-width: 739px), (max-height: 739px) {
-    margin-top:0;
-    }
 }
 
 hr {

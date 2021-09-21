@@ -330,6 +330,7 @@ h4 {
 
 .mobileContact {
   display: none;
+  width: auto;
 }
 
 @media (max-width: 739px), (max-height: 739px) {
@@ -399,6 +400,12 @@ h4 {
   }
 }
 
+@media (max-width: 740px) {
+  .contact {
+    width: auto;
+  }
+}
+
 .stacInformathion {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -441,16 +448,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.educationTop {
-  margin-top: 30px;
-}
-
-@media (max-width: 739px), (max-height: 739px) {
-  .educationTop {
-    margin-top: 0;
-  }
 }
 
 hr {
